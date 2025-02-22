@@ -18,28 +18,6 @@
  * @package WordPress
  */
 
-<<<<<<< HEAD
-// ** Database settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
-define( 'DB_NAME', 'wordpress' );
-
-/** Database username */
-define( 'DB_USER', 'root' );
-
-/** Database password */
-define( 'DB_PASSWORD', '' );
-
-/** Database hostname */
-define( 'DB_HOST', '127.0.0.1' );
-
-/** Database charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8mb4' );
-
-/** The database collate type. Don't change this if in doubt. */
-define( 'DB_COLLATE', '' );
-=======
->>>>>>> 48589d3bdcb210114e740bbc6976b5f6995f0ccb
-
 /**#@+
  * Authentication unique keys and salts.
  *
@@ -110,11 +88,4 @@ define('DB_NAME', 's2wee4pazjgwq3gi');         // データベース名
 define('DB_USER', 'w8pw5av6gw7s307s');         // ユーザー名
 define('DB_PASSWORD', 'vq5k2lpsk7k0r4s7');     // パスワード
 define('DB_HOST', 'bmsyhziszmhf61g1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com');  // ホスト名
-<<<<<<< HEAD
-=======
 
-
-define( 'WP_DEBUG', true );
-define( 'WP_DEBUG_LOG', true );
-define( 'WP_DEBUG_DISPLAY', false );
->>>>>>> 48589d3bdcb210114e740bbc6976b5f6995f0ccb
