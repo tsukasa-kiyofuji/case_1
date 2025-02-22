@@ -103,7 +103,7 @@ require_once ABSPATH . 'wp-settings.php';
 @ini_set( 'max_input_time', '300' );
 
 // JAWSDB MySQLの接続情報を設定
-$mysql_url = parse_url(getenv("JAWSDB_URL"));
+$mysql_url = parse_url(getenv("JAWSDB_URL") ?: 'mysql://w8pw5av6gw7s307s:vq5k2lpsk7k0r4s7@bmsyhziszmhf61g1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/s2wee4pazjgwq3gi');
 define('DB_NAME', substr($mysql_url["path"], 1)); // データベース名
 define('DB_USER', $mysql_url["user"]);             // ユーザー名
 define('DB_PASSWORD', $mysql_url["pass"]);         // パスワード
