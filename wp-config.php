@@ -84,13 +84,13 @@ require_once ABSPATH . 'wp-settings.php';
 @ini_set( 'max_execution_time', '300' );
 @ini_set( 'max_input_time', '300' );
 
-// JAWSDB MySQLの接続情報を設定
 $mysql_url = parse_url(getenv("JAWSDB_URL") ?: 'mysql://w8pw5av6gw7s307s:vq5k2lpsk7k0r4s7@bmsyhziszmhf61g1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/s2wee4pazjgwq3gi');
+
 define('DB_NAME', substr($mysql_url["path"], 1)); // データベース名
 define('DB_USER', $mysql_url["user"]);             // ユーザー名
 define('DB_PASSWORD', $mysql_url["pass"]);         // パスワード
 define('DB_HOST', $mysql_url["host"]);             // ホスト名
-define('DB_PORT', $mysql_url["port"]);             // ポート（省略可能）
+define('DB_PORT', $mysql_url["port"] ?: 3306);     // ポート（省略可能）
 
 // // ** Database settings - You can get this info from your web host ** //
 // /** The name of the database for WordPress */
