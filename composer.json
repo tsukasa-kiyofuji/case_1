@@ -1,0 +1,7 @@
+{
+  "name": "your-app-name",
+  "description": "A short description of your app",
+  "require": {
+    "php": ">=7.4"
+  }
+}
