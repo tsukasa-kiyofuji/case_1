@@ -85,12 +85,11 @@ require_once ABSPATH . 'wp-settings.php';
 @ini_set( 'max_input_time', '300' );
 
 $mysql_url = parse_url('mysql://w8pw5av6gw7s307s:vq5k2lpsk7k0r4s7@bmsyhziszmhf61g1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/s2wee4pazjgwq3gi');
+define('DB_NAME', 's2wee4pazjgwq3gi');         // データベース名
+define('DB_USER', 'w8pw5av6gw7s307s');         // ユーザー名
+define('DB_PASSWORD', 'vq5k2lpsk7k0r4s7');     // パスワード
+define('DB_HOST', 'bmsyhziszmhf61g1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com');  // ホスト名
 
-define('DB_NAME', substr($mysql_url["path"], 1)); // データベース名
-define('DB_USER', $mysql_url["user"]);             // ユーザー名
-define('DB_PASSWORD', $mysql_url["pass"]);         // パスワード
-define('DB_HOST', $mysql_url["host"]);             // ホスト名
-define('DB_PORT', $mysql_url["port"] ?: 3306);     // ポート（省略可能）
 
 define( 'WP_DEBUG', true );
 define( 'WP_DEBUG_LOG', true );
