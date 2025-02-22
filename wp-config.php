@@ -18,24 +18,6 @@
  * @package WordPress
  */
 
-// ** Database settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
-define( 'DB_NAME', 's2wee4pazjgwq3gi' );
-
-/** Database username */
-define( 'DB_USER', 'w8pw5av6gw7s307s' );
-
-/** Database password */
-define( 'DB_PASSWORD', 'vq5k2lpsk7k0r4s7' );
-
-/** Database hostname */
-define( 'DB_HOST', '	bmsyhziszmhf61g1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com' );
-
-/** Database charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8mb4' );
-
-/** The database collate type. Don't change this if in doubt. */
-define( 'DB_COLLATE', '' );
 
 /**#@+
  * Authentication unique keys and salts.
@@ -109,3 +91,22 @@ define('DB_USER', $mysql_url["user"]);             // ユーザー名
 define('DB_PASSWORD', $mysql_url["pass"]);         // パスワード
 define('DB_HOST', $mysql_url["host"]);             // ホスト名
 define('DB_PORT', $mysql_url["port"]);             // ポート（省略可能）
+
+// // ** Database settings - You can get this info from your web host ** //
+// /** The name of the database for WordPress */
+// define( 'DB_NAME', 's2wee4pazjgwq3gi' );
+
+// /** Database username */
+// define( 'DB_USER', 'w8pw5av6gw7s307s' );
+
+// /** Database password */
+// define( 'DB_PASSWORD', 'vq5k2lpsk7k0r4s7' );
+
+// /** Database hostname */
+// define( 'DB_HOST', '	bmsyhziszmhf61g1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com' );
+
+// /** Database charset to use in creating database tables. */
+// define( 'DB_CHARSET', 'utf8mb4' );
+
+// /** The database collate type. Don't change this if in doubt. */
+// define( 'DB_COLLATE', '' );
