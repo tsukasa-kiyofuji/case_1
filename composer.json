@@ -1,0 +1,7 @@
+{
+  "require": {
+    "php": "^8.2.12",
+    "ext-mbstring": "*",
+    "ext-openssl": "*"
+  }
+}
